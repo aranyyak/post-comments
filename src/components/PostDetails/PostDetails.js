@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
-import Comments from './Comments/Comments';
+import Comments from '../Comments/Comments';
 
 const PostDetails = () => {
     const [details, setDetails] = useState({})
