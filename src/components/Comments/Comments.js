@@ -15,13 +15,13 @@ const Comments = () => {
     return (
         <div>
             <div style={{margin:'20px 200px', color:'blue'}}>
-                <div style={{display:'flex'}}>
-                    <img style={{width:'30px', borderRadius:'50%', marginRight:'20px'}} src={`https://randomuser.me/api/portraits/thumb/men/${id}.jpg`} alt="" />
+                <div style={{display:'flex', alignItems:'flex-start', border: '1px solid gray', marginBottom:'20px', padding: '10px'}}>
+                    <img style={{width:'50px', borderRadius:'50%', marginRight:'20px'}} src={`https://randomuser.me/api/portraits/thumb/men/${id}.jpg`} alt="" />
                     <p>{comment.name}</p>
                 </div>
                 
-                <div style={{display:'flex'}}>
-                    <img style={{width:'30px', borderRadius:'50%', marginRight:'20px', border:'1000px'}} src={`https://randomuser.me/api/portraits/thumb/men/${id+1}.jpg`} alt="" />
+                <div style={{display:'flex', alignItems:'flex-start', border: '1px solid gray', marginBottom:'20px', padding: '10px'}}>
+                    <img style={{width:'50px', borderRadius:'50%', marginRight:'20px', border:'1000px'}} src={`https://randomuser.me/api/portraits/thumb/men/${id-1}.jpg`} alt="" />
                     <p>{comment.body}</p>
                 </div>
             </div>
